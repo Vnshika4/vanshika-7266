@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Artist Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1>Spotify Artist Search</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h2>Welcome to Spotify Artist Search</h2>
+      <p>Search for your favorite artists and explore their albums and tracks!</p>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for artists...">
+        <button id="searchButton">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="albums" class="container albums-list"></div>
+
+  <!-- Add the tracks container here -->
+  <div id="tracks" class="container tracks-list"></div>
+  <div class="song-info">
+    <h3 class="songname">Song Name</h3>
+    <p class="songartist">Artist Name</p>
+  </div>
+  <audio id="audioPlayer" controls></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
